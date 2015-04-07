@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.messages.confirm request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class TmcMessagesConfirmRequest
 {
@@ -18,8 +18,7 @@ class TmcMessagesConfirmRequest
 	private $groupName;
 	
 	/** 
-	 * 处理成功的消息ID列表
-最大 200个ID
+	 * 处理成功的消息ID列表 最大 200个ID
 	 **/
 	private $sMessageIds;
 	

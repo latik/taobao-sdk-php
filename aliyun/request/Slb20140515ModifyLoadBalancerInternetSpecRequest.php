@@ -3,7 +3,7 @@
  * TOP API: slb.aliyuncs.com.ModifyLoadBalancerInternetSpec.2014-05-15 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Slb20140515ModifyLoadBalancerInternetSpecRequest
 {

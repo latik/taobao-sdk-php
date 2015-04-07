@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.message.produce request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class TmcMessageProduceRequest
 {
@@ -13,7 +13,7 @@ class TmcMessageProduceRequest
 	private $content;
 	
 	/** 
-	 * 发布消息关联的主题<br /> 支持最大长度为：256<br /> 支持的最大列表长度为：256
+	 * 消息类型<br /> 支持最大长度为：256<br /> 支持的最大列表长度为：256
 	 **/
 	private $topic;
 	

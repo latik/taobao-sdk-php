@@ -3,24 +3,25 @@
  * TOP API: tmall.product.specs.get request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:03
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class TmallProductSpecsGetRequest
 {
 	/** 
 	 * 类目的ID号，该id必须和properties同时传入。
-而且只有当product_id不传入的时候才起效果。
+而且只有当product_id不传入的时候才起效果。<br> product_id不传时，该参数必传
 	 **/
 	private $catId;
 	
 	/** 
-	 * 产品的ID。这个不能和properties和cat_id同时起效果
+	 * 产品的ID。这个不能和properties和cat_id同时起效果<br>
+properties 和cat_id 均不传时，该参数必传。
 	 **/
 	private $productId;
 	
 	/** 
 	 * 关键属性的字符串，pid:vid;pid:vid
-该字段必须和cat_id同时传入才起效果。 而且只有当product_id不传入的时候才起效果。
+该字段必须和cat_id同时传入才起效果。 而且只有当product_id不传入的时候才起效果。<br>product_id 不传时该参数必传
 	 **/
 	private $properties;
 	

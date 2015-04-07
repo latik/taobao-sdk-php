@@ -3,7 +3,7 @@
  * TOP API: taobao.item.update request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:03
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class ItemUpdateRequest
 {
@@ -413,7 +413,7 @@ fee_card(话费软件代充)
 	private $productId;
 	
 	/** 
-	 * 属性值别名。如pid:vid:别名;pid1:vid1:别名1， pid:属性id vid:值id。总长度不超过800字节<br /> 支持最大长度为：800<br /> 支持的最大列表长度为：800
+	 * 属性值别名。如pid:vid:别名;pid1:vid1:别名1， pid:属性id vid:值id。总长度不超过511字节<br /> 支持最大长度为：800<br /> 支持的最大列表长度为：800
 	 **/
 	private $propertyAlias;
 	

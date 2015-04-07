@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.insight.wordssubdata.get request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:03
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class SimbaInsightWordssubdataGetRequest
 {
@@ -71,7 +71,7 @@ class SimbaInsightWordssubdataGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bidwordList,"bidwordList");
-		RequestCheckUtil::checkMaxListSize($this->bidwordList,10,"bidwordList");
+		RequestCheckUtil::checkMaxListSize($this->bidwordList,100,"bidwordList");
 		RequestCheckUtil::checkNotNull($this->endDate,"endDate");
 		RequestCheckUtil::checkNotNull($this->startDate,"startDate");
 	}

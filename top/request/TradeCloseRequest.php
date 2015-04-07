@@ -3,19 +3,19 @@
  * TOP API: taobao.trade.close request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:03
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class TradeCloseRequest
 {
 	/** 
 	 * 交易关闭原因。可以选择的理由有：
 1.未及时付款
-2.买家联系不上
-3.谢绝还价
-4.商品瑕疵
-5.协商不一致
-6.买家不想买
-7.与买家协商一致
+2、买家不想买了
+3、买家信息填写错误，重新拍
+4、恶意买家/同行捣乱
+5、缺货
+6、买家拍错了
+7、同城见面交易
 	 **/
 	private $closeReason;
 	

@@ -3,7 +3,7 @@
  * TOP API: ecs.aliyuncs.com.DescribeImages.2014-05-26 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Ecs20140526DescribeImagesRequest
 {
@@ -55,6 +55,11 @@ others 非自己的可用镜像
 	 * 创建镜像的快照ID
 	 **/
 	private $snapshotId;
+	
+	/** 
+	 * 根据用户的镜像状态查询
+	 **/
+	private $status;
 	
 	/**
 	 * 仅用于渠道商发起API调用时，指定访问的资源拥有者的ID
@@ -160,6 +165,17 @@ others 非自己的可用镜像
 	public function getSnapshotId()
 	{
 		return $this->snapshotId;
+	}
+
+	public function setStatus($status)
+	{
+		$this->status = $status;
+		$this->apiParas["Status"] = $status;
+	}
+
+	public function getStatus()
+	{
+		return $this->status;
 	}
 
 	

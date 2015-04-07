@@ -3,7 +3,7 @@
  * TOP API: taobao.jipiao.agent.order.search request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class JipiaoAgentOrderSearchRequest
 {
@@ -16,6 +16,12 @@ class JipiaoAgentOrderSearchRequest
 	 * 创建订单时间范围的结束时间，注意：当前搜索条件开始结束时间范围不能超过三天，默认为当前时间 （具体天数可能调整）
 	 **/
 	private $endTime;
+	
+	/** 
+	 * 扩展字段:
+needFilterAutobook：默认true。待出票状态下，会根据此值过滤掉自动出票状态下订单，以防止重复出票的问题。对于精选票，此值需要设置成false，并由API使用者保证不会重复出票。
+	 **/
+	private $extra;
 	
 	/** 
 	 * 是否需要行程单，true表示需要行程单；false表示不许要
@@ -65,6 +71,17 @@ class JipiaoAgentOrderSearchRequest
 	public function getEndTime()
 	{
 		return $this->endTime;
+	}
+
+	public function setExtra($extra)
+	{
+		$this->extra = $extra;
+		$this->apiParas["extra"] = $extra;
+	}
+
+	public function getExtra()
+	{
+		return $this->extra;
 	}
 
 	public function setHasItinerary($hasItinerary)

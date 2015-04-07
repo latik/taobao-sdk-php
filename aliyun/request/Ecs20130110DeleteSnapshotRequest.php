@@ -3,7 +3,7 @@
  * TOP API: ecs.aliyuncs.com.DeleteSnapshot.2013-01-10 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Ecs20130110DeleteSnapshotRequest
 {

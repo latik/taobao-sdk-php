@@ -3,7 +3,7 @@
  * TOP API: mts.aliyuncs.com.QueryMediaBucket.2014-06-18 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Mts20140618QueryMediaBucketRequest
 {

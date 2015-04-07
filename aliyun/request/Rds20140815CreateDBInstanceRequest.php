@@ -3,7 +3,7 @@
  * TOP API: rds.aliyuncs.com.CreateDBInstance.2014-08-15 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Rds20140815CreateDBInstanceRequest
 {
@@ -62,6 +62,12 @@ MySQL：5.5/5.6SQLServer：2008r2
 其中，0.0.0.0/0，表示不限制，用户输入%提示报错
 	 **/
 	private $securityIPList;
+	
+	/** 
+	 * 可用区通过函数DescribeRegions查看
+不填系统随机指定
+	 **/
+	private $zoneId;
 	
 	/**
 	 * 仅用于渠道商发起API调用时，指定访问的资源拥有者的ID
@@ -189,6 +195,17 @@ MySQL：5.5/5.6SQLServer：2008r2
 	public function getSecurityIPList()
 	{
 		return $this->securityIPList;
+	}
+
+	public function setZoneId($zoneId)
+	{
+		$this->zoneId = $zoneId;
+		$this->apiParas["ZoneId"] = $zoneId;
+	}
+
+	public function getZoneId()
+	{
+		return $this->zoneId;
 	}
 
 	

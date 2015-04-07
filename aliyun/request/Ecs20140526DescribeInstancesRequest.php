@@ -3,10 +3,15 @@
  * TOP API: ecs.aliyuncs.com.DescribeInstances.2014-05-26 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Ecs20140526DescribeInstancesRequest
 {
+	/** 
+	 * 最多不超过10个。
+	 **/
+	private $instanceIds;
+	
 	/** 
 	 * 实例网络类型
 	 **/
@@ -65,6 +70,17 @@ class Ecs20140526DescribeInstancesRequest
     
 	private $apiParas = array();
 	
+	public function setInstanceIds($instanceIds)
+	{
+		$this->instanceIds = $instanceIds;
+		$this->apiParas["InstanceIds"] = $instanceIds;
+	}
+
+	public function getInstanceIds()
+	{
+		return $this->instanceIds;
+	}
+
 	public function setInstanceNetworkType($instanceNetworkType)
 	{
 		$this->instanceNetworkType = $instanceNetworkType;

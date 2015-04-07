@@ -3,7 +3,7 @@
  * TOP API: ecs.aliyuncs.com.CreateInstance.2014-05-26 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Ecs20140526CreateInstanceRequest
 {
@@ -17,6 +17,11 @@ class Ecs20140526CreateInstanceRequest
 	 * 数据盘1类型。
 	 **/
 	private $dataDisk1Category;
+	
+	/** 
+	 * 磁盘是否随实例一起释放
+	 **/
+	private $dataDisk1DeleteWithInstance;
 	
 	/** 
 	 * 数据盘名称，不填则为空，默认值为空，[0,128]英文或中文字符，磁盘名称会展示在控制台。不能以http://和https://开头。
@@ -49,6 +54,11 @@ class Ecs20140526CreateInstanceRequest
 	private $dataDisk2Category;
 	
 	/** 
+	 * 磁盘是否随实例一起释放
+	 **/
+	private $dataDisk2DeleteWithInstance;
+	
+	/** 
 	 * 数据盘描述，不填则为空，默认值为空，[0,256]英文或中文字符，磁盘描述会展示在控制台。不能以http://和https://开头。
 	 **/
 	private $dataDisk2Description;
@@ -79,6 +89,11 @@ class Ecs20140526CreateInstanceRequest
 	private $dataDisk3Category;
 	
 	/** 
+	 * 磁盘是否随实例一起释放
+	 **/
+	private $dataDisk3DeleteWithInstance;
+	
+	/** 
 	 * 数据盘描述，不填则为空，默认值为空，[0,256]英文或中文字符，磁盘描述会展示在控制台。不能以http://和https://开头。
 	 **/
 	private $dataDisk3Description;
@@ -107,6 +122,11 @@ class Ecs20140526CreateInstanceRequest
 	 * 数据盘4类型
 	 **/
 	private $dataDisk4Category;
+	
+	/** 
+	 * 磁盘是否随实例一起释放
+	 **/
+	private $dataDisk4DeleteWithInstance;
 	
 	/** 
 	 * 数据盘描述，不填则为空，默认值为空，[0,256]英文或中文字符，磁盘描述会展示在控制台。不能以http://和https://开头。
@@ -263,6 +283,17 @@ Windows平台最长为15字符，允许字母（不限制大小写）、数字�
 		return $this->dataDisk1Category;
 	}
 
+	public function setDataDisk1DeleteWithInstance($dataDisk1DeleteWithInstance)
+	{
+		$this->dataDisk1DeleteWithInstance = $dataDisk1DeleteWithInstance;
+		$this->apiParas["DataDisk.1.DeleteWithInstance"] = $dataDisk1DeleteWithInstance;
+	}
+
+	public function getDataDisk1DeleteWithInstance()
+	{
+		return $this->dataDisk1DeleteWithInstance;
+	}
+
 	public function setDataDisk1Description($dataDisk1Description)
 	{
 		$this->dataDisk1Description = $dataDisk1Description;
@@ -327,6 +358,17 @@ Windows平台最长为15字符，允许字母（不限制大小写）、数字�
 	public function getDataDisk2Category()
 	{
 		return $this->dataDisk2Category;
+	}
+
+	public function setDataDisk2DeleteWithInstance($dataDisk2DeleteWithInstance)
+	{
+		$this->dataDisk2DeleteWithInstance = $dataDisk2DeleteWithInstance;
+		$this->apiParas["DataDisk.2.DeleteWithInstance"] = $dataDisk2DeleteWithInstance;
+	}
+
+	public function getDataDisk2DeleteWithInstance()
+	{
+		return $this->dataDisk2DeleteWithInstance;
 	}
 
 	public function setDataDisk2Description($dataDisk2Description)
@@ -395,6 +437,17 @@ Windows平台最长为15字符，允许字母（不限制大小写）、数字�
 		return $this->dataDisk3Category;
 	}
 
+	public function setDataDisk3DeleteWithInstance($dataDisk3DeleteWithInstance)
+	{
+		$this->dataDisk3DeleteWithInstance = $dataDisk3DeleteWithInstance;
+		$this->apiParas["DataDisk.3.DeleteWithInstance"] = $dataDisk3DeleteWithInstance;
+	}
+
+	public function getDataDisk3DeleteWithInstance()
+	{
+		return $this->dataDisk3DeleteWithInstance;
+	}
+
 	public function setDataDisk3Description($dataDisk3Description)
 	{
 		$this->dataDisk3Description = $dataDisk3Description;
@@ -459,6 +512,17 @@ Windows平台最长为15字符，允许字母（不限制大小写）、数字�
 	public function getDataDisk4Category()
 	{
 		return $this->dataDisk4Category;
+	}
+
+	public function setDataDisk4DeleteWithInstance($dataDisk4DeleteWithInstance)
+	{
+		$this->dataDisk4DeleteWithInstance = $dataDisk4DeleteWithInstance;
+		$this->apiParas["DataDisk.4.DeleteWithInstance"] = $dataDisk4DeleteWithInstance;
+	}
+
+	public function getDataDisk4DeleteWithInstance()
+	{
+		return $this->dataDisk4DeleteWithInstance;
 	}
 
 	public function setDataDisk4Description($dataDisk4Description)

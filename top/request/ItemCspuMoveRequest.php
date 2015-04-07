@@ -3,7 +3,7 @@
  * TOP API: taobao.item.cspu.move request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:02
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class ItemCspuMoveRequest
 {

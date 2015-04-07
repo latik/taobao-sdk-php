@@ -3,7 +3,7 @@
  * TOP API: taobao.tae.items.select request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class TaeItemsSelectRequest
 {
@@ -43,7 +43,7 @@ class TaeItemsSelectRequest
 	private $sellerCids;
 	
 	/** 
-	 * 卖家昵称
+	 * 卖家昵称，这个参数必须要传入才能获取卖家的商品数据。
 	 **/
 	private $sellerNick;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.insight.relatedwords.get request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:03
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class SimbaInsightRelatedwordsGetRequest
 {
@@ -13,7 +13,7 @@ class SimbaInsightRelatedwordsGetRequest
 	private $bidwordList;
 	
 	/** 
-	 * 表示返回数据的条数<br /> 支持最大值为：10<br /> 支持最小值为：1
+	 * 表示返回数据的条数<br /> 支持最大值为：100<br /> 支持最小值为：1
 	 **/
 	private $number;
 	
@@ -55,9 +55,9 @@ class SimbaInsightRelatedwordsGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bidwordList,"bidwordList");
-		RequestCheckUtil::checkMaxListSize($this->bidwordList,10,"bidwordList");
+		RequestCheckUtil::checkMaxListSize($this->bidwordList,100,"bidwordList");
 		RequestCheckUtil::checkNotNull($this->number,"number");
-		RequestCheckUtil::checkMaxValue($this->number,10,"number");
+		RequestCheckUtil::checkMaxValue($this->number,100,"number");
 		RequestCheckUtil::checkMinValue($this->number,1,"number");
 	}
 	

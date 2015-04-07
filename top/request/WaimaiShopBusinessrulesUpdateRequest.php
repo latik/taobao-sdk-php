@@ -3,7 +3,7 @@
  * TOP API: taobao.waimai.shop.businessrules.update request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class WaimaiShopBusinessrulesUpdateRequest
 {
@@ -46,6 +46,16 @@ class WaimaiShopBusinessrulesUpdateRequest
 	 * 外卖商家电话
 	 **/
 	private $mobile;
+	
+	/** 
+	 * 店铺公告
+	 **/
+	private $notice;
+	
+	/** 
+	 * 客服电话
+	 **/
+	private $phone;
 	
 	/** 
 	 * 店铺id
@@ -145,6 +155,28 @@ class WaimaiShopBusinessrulesUpdateRequest
 	public function getMobile()
 	{
 		return $this->mobile;
+	}
+
+	public function setNotice($notice)
+	{
+		$this->notice = $notice;
+		$this->apiParas["notice"] = $notice;
+	}
+
+	public function getNotice()
+	{
+		return $this->notice;
+	}
+
+	public function setPhone($phone)
+	{
+		$this->phone = $phone;
+		$this->apiParas["phone"] = $phone;
+	}
+
+	public function getPhone()
+	{
+		return $this->phone;
 	}
 
 	public function setShopid($shopid)

@@ -3,12 +3,17 @@
  * TOP API: taobao.waimai.order.index.get request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:19
  */
 class WaimaiOrderIndexGetRequest
 {
 	/** 
 	 * 订单创建时间的结束时间,格式为 yyyy-MM-dd HH:mm:ss
+	 **/
+	private $endCreateTime;
+	
+	/** 
+	 * 订单修改时间的结束时间,格式为 yyyy-MM-dd HH:mm:ss
 	 **/
 	private $endTime;
 	
@@ -21,6 +26,11 @@ class WaimaiOrderIndexGetRequest
 	 * 订单状态 待确认订单2 , 退款中订单4 , 已发货12 关闭20 交易成功21
 	 **/
 	private $orderStatus;
+	
+	/** 
+	 * 可以同时输入多个订单状态,用逗号分隔
+	 **/
+	private $orderStatusMulti;
 	
 	/** 
 	 * 订单类型
@@ -45,10 +55,26 @@ class WaimaiOrderIndexGetRequest
 	/** 
 	 * 订单创建时间的起点时间,格式为 yyyy-MM-dd HH:mm:ss
 	 **/
+	private $startCreateTime;
+	
+	/** 
+	 * 订单修改时间的起点时间,格式为 yyyy-MM-dd HH:mm:ss
+	 **/
 	private $startTime;
 	
 	private $apiParas = array();
 	
+	public function setEndCreateTime($endCreateTime)
+	{
+		$this->endCreateTime = $endCreateTime;
+		$this->apiParas["end_create_time"] = $endCreateTime;
+	}
+
+	public function getEndCreateTime()
+	{
+		return $this->endCreateTime;
+	}
+
 	public function setEndTime($endTime)
 	{
 		$this->endTime = $endTime;
@@ -80,6 +106,17 @@ class WaimaiOrderIndexGetRequest
 	public function getOrderStatus()
 	{
 		return $this->orderStatus;
+	}
+
+	public function setOrderStatusMulti($orderStatusMulti)
+	{
+		$this->orderStatusMulti = $orderStatusMulti;
+		$this->apiParas["order_status_multi"] = $orderStatusMulti;
+	}
+
+	public function getOrderStatusMulti()
+	{
+		return $this->orderStatusMulti;
 	}
 
 	public function setOrderType($orderType)
@@ -124,6 +161,17 @@ class WaimaiOrderIndexGetRequest
 	public function getShopId()
 	{
 		return $this->shopId;
+	}
+
+	public function setStartCreateTime($startCreateTime)
+	{
+		$this->startCreateTime = $startCreateTime;
+		$this->apiParas["start_create_time"] = $startCreateTime;
+	}
+
+	public function getStartCreateTime()
+	{
+		return $this->startCreateTime;
 	}
 
 	public function setStartTime($startTime)

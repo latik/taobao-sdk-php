@@ -3,7 +3,7 @@
  * TOP API: rds.aliyuncs.com.CreateDatabase.2014-08-15 request
  * 
  * @author auto create
- * @since 1.0, 2014-11-11 16:54:04
+ * @since 1.0, 2015-01-20 12:44:20
  */
 class Rds20140815CreateDatabaseRequest
 {
@@ -18,11 +18,6 @@ SQL_Latin1_General_CP1_CS_AS
 Chinese_PRC_BIN
 	 **/
 	private $characterSetName;
-	
-	/** 
-	 * 数据库描述
-	 **/
-	private $createDatabase;
 	
 	/** 
 	 * 数据库描述，不超过256个字符
@@ -66,17 +61,6 @@ Chinese_PRC_BIN
 	public function getCharacterSetName()
 	{
 		return $this->characterSetName;
-	}
-
-	public function setCreateDatabase($createDatabase)
-	{
-		$this->createDatabase = $createDatabase;
-		$this->apiParas["CreateDatabase"] = $createDatabase;
-	}
-
-	public function getCreateDatabase()
-	{
-		return $this->createDatabase;
 	}
 
 	public function setdBDescription($dBDescription)
