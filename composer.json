@@ -1,0 +1,10 @@
+{
+    "name": "latik/taobao-sdk",
+    "description": "Mirror taobao api official package",
+    "authors": [
+        {
+            "name": "Latik",
+            "email": "latik@users.noreply.github.com"
+        }
+    ]
+}
