@@ -1,12 +1,15 @@
 {
     "name": "latik/taobao-sdk",
     "description": "Mirror taobao api official package",
+    "keywords": ["taobao", "api", "top", "sdk"],
     "authors": [
         {
             "name": "Latik",
             "email": "latik@users.noreply.github.com"
         }
     ],
+    "type": "library",
+    "license": "MIT",
     "require": {
         "php": ">= 5.2.0",
         "ext-curl": "*"
